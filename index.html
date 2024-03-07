@@ -1,94 +1,186 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TioScesar 🤘</title>
+    <link rel="icon" href="assets/picture/icon/favicon.png">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./hamburgers.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <html data-theme="cupcake"></html>
+</head>
 
-    <!-- Bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+<body>
+    
+    <!-- navbar start -->
+    <section id="navbar pt-16">
+            <div class="navbar bg-primary w-full">
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-xl px-10 font-serif">TioScesar!</a>
+                </div>
+                <div class="flex-none px-10">
+                    <label class="swap swap-rotate">
+  
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" class="theme-controller" value="dark" />
+                        
+                        <!-- sun icon -->
+                        <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                        
+                        <!-- moon icon -->
+                        <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                        
+                      </label>
+                </div>
+              </div>
+    </section>
 
-    <!-- My Css -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- navbar end -->
 
-    <title>Hi Internet :)</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark text-bg-primary">
-      <div class="container-fluid">
-        <h5>My Portofolio</h5>
-        <a class="navbar-brand" href="https://wa.me/628981177020"><i class="bi bi-whatsapp"></i> Tio Scesar</a>
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-12">
+        <div class="container">
+            <div data-aos="zoom-in">
+                <div class="flex flex-wrap">
+                    <div class="w-full self-center px-4">
+                        <h1 class="text-base font-semibold text-primary text-center">Hello, World!</h1>
+                        <h2 class="font-bold text-5xl text-center">i'm Tio Scesar</h2>
+                        <h2 class= "font-medium  text-center">
+                            <span id="typed-text" style="font-size: 1.5rem; font-family: monospace; font-weight: 800;"></span>
+                            <script>
+                               var typed = new Typed('#typed-text', {
+                                  strings: ['a 3D CAD DESIGNER', 'a 3D PRINT ENTHUSIATS', 'a nOOb'],
+                                  typeSpeed: 20,
+                                  backSpeed: 50,
+                                  loop: true,
+                                  fadeout: true,
+                              });
+                            </script>
+                        </h2>
+                    
+                        <div class="w-full px-4 ">
+                            <div class="mb-3 items-center justify-center flex flex-wrap">
+                                <a href="https://wa.link/3o1wdf" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-55 transition duration-300 ease-in-out">Lets Rock & Roll  🤘</a>
+                            </div>
+                            <div class="flex items-center justify-center flex-wrap">
+                             <!-- Gmail -->
+                             <a href="mailto:tioscesar@gmail.com" target="_blank" class="w-9 h-10 mr-3 rounded-full flex justify-center">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                            </a>
+                                <!-- Thingiverse -->
+                            <a href="https://www.thingiverse.com/tioscesar/designs" target="_blank" class="w-9 h-10 mr-3 rounded-full flex justify-center">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Thingiverse</title><path d="M11.955.005C5.425-.152-.091 5.485.007 11.805c-.235 6.756 5.537 12.25 12.052 12.196C18.621 23.9 23.912 18.595 24 12.03 24.031 5.483 18.505-.18 11.955.005zm-.047 1.701a10.276 10.276 0 0 1 7.36 17.529 10.275 10.275 0 0 1-17.556-7.287C1.71 6.308 6.268 1.728 11.907 1.706zm-5.55 4.781c-.322 0-.358.033-.358.361v2.248c0 .351.04.391.398.391h3.823c.274 0 .274.004.274.265v9.736a.176.176 0 0 0 .051.146c.04.038.093.059.148.053h2.555c.247-.003.283-.035.283-.28v-9.32c0-.124.004-.239 0-.39s.055-.21.218-.21h3.9c.319.004.35-.032.35-.344V6.855c0-.34-.024-.363-.37-.363h-5.626z"/></svg>
+                            </a>
+                                <!-- IG -->
+                            <a href="https://www.instagram.com/tioscesar/?hl=en" target="_blank" class="w-9 h-10 mr-3 rounded-full flex justify-center">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                            </a>
+                            <!-- spotify -->
+                            <a href="https://open.spotify.com/user/6w9wziqbxw746r390qnsb6cz7?si=d3024593a1d94d59" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center">
+                                <svg role="img" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Spotify</title><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                            </a>
+                             <!-- Fiverr -->
+                             <a href=" https://www.fiverr.com/tioscesar" target="_blank" class="w-9 h-10 mr-3 rounded-full flex justify-center">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Fiverr</title><path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/></svg>
+                            </a>
+                            </div>                       
+                        </div>
+                    </div>
+                                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="About" class="pt-20 pb-10">
+        <div class="container">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full px-4 mb-10 md:w-1/2">
+                    <h1 class="font-extrabold uppercase text-primary">About Me</h1>
+                    <h2 class="font-bold text-2xl max-w-xl mb-1">If you can dream it, we can make it!</h2>
+                        <p class="px-3 text-justify">Skilled in modeling 3D Cad designs and do Reverse Engineering on products using CAD software like Solidworks, Autodesk Inventor, and Fusion360. also have a good understanding of the 3D printing process.</p>
+                        <p class="mt-3 uppercase text-primary">Let's make your ideas to life! Let's collaborate 🤘</p>
+                </div>
+                <div class="w-full px-4 md:w-1/2">
+                    <h1 class="font-extrabold uppercase text-primary mb-5">My Skill</h1>
+                    <p class="flex flex-wrap items-center justify-center">
+                        <img class="h-20 mb-3 mx-2" src="assets/picture/icon/Solidworks.png" alt="">
+                        <img class="h-20 mb-3 px-1" src="assets/picture/icon/Fusion360.png" alt="">
+                        <img class="h-20 mb-3 px-1" src="assets/picture/icon/inventor.webp" alt="">
+                        <img class="h-20 mb-3 px-1 "src="assets/picture/icon/Meshmixer.png" alt="">
+                        <img class="h-20 mb-3 px-1" src="assets/picture/icon/Cura.png" alt="">
+                    </p>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    
+        <!-- About Portfolio Start -->
+        <section id="Portfolio" class="pt-10 pb-16">
+            <div class="container">
+                <div class="w-full px-4 ">
+                    <h4 class="flex font-extrabold uppercase text-primary justify-center mb-4">Portfolio</h4>
+                        <div class="flex flex-warp justify-center"></div>
+            
+                </div>
+                    <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                        <div class="mb-12 p-4 md:w-1/2 ">                            
+                            <div class="card lg:card-side bg-base-100 shadow-xl">
+                                <figure><img src="assets/picture/B.png" alt="Album"/></figure>
+                                <div class="card-body">
+                                  <h2 class="card-title">BAR BENDING MACHINE</h2>
+                                  <p></p>
+                                  <div class="card-actions justify-end">
+                                    <button class="btn btn-primary">
+                                        <a href="https://www.youtube.com/watch?v=nVstM5i7WA8&t=199s" target="_blank">See More</a>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="mb-12 p-4 md:w-1/2 ">
+                            <div class="card lg:card-side bg-base-100 shadow-xl">
+                                <figure><img src="assets/picture/1.png" alt="Album"/></figure>
+                                <div class="card-body">
+                                  <h2 class="card-title">CASEGO</h2>
+                                  <p></p>
+                                  <div class="card-actions justify-end">
+                                    <button class="btn btn-primary">
+                                        <a href="assets/Porto.pdf" target="_blank">See More</a>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- About Portfolio End -->
+
+        <!-- Contact Start -->
+        <section id="Footer">
+                <div class="flex flex-wrap w-full">
+                    <footer class="footer p-5 bg-primary text-neutral-content  text-center justify-center w-full">
+                        <h1 class="text-base">Dibuat Dengan Sepenuh Hati ❤️</h1>
+                      </footer>
+                </div>
+        </section>
         
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero -->
-    <section class="Hero">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-5 mt-5 mt-md-0 text-center">
-            <img src="assets/picture/tio.png" alt="Tio Scesar" class="rounded-circle" height="300px" />
-          </div>
-          <div class="col-md-5 mt-5 mt-md-0 order-md-first">
-            <h3 class="fs-4">Hi Internet,</h3>
-            <h1 class="fs-5">saya <span class="text-primary fs-1">Tio Scesar.</span></h1>
-            <p>Mari Bertumbuh dan Berkembang Bersama, POWER Up Up Up</p>
-            <a href="https://wa.me/628981177020" class="btn btn-success px-3 mt-3"><i class="bi bi-whatsapp"></i> Mari Berkenalan</a>
-           
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hero End -->
-
-    <!-- projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mt-5 mb-3 g-3">
-          <div class="col">
-            <h2>Portofolio</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="card" style="width: 20rem;">
-            <img src="assets/picture/1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Casego</h5>
-              <p class="card-text">Casego merupakan proyek individu, terinspirasi dari mainan puzzle Lego, Casego terdapat lubang 
-                lubang berjarak yang berfungsi sebagai tempat menambahkan alat modular (cardholder 
-                atau Gamepad).</p>
-              <a href="assets/Porto.pdf" download class="btn btn-primary">Selengkapnya</a>
-            </div>
-          </div>
-          <div class="card" style="width: 20rem;">
-            <img src="assets/picture/A.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mesin Bending Begel</h5>
-              <p class="card-text">Mesin Bending Begel merupakan sebuah proyek kelompok, pada proyek ini saya bertanggung jawab untuk mengilustrasikan desain mesin serta melakukan animasi sederhana</p>
-              <a href="https://www.youtube.com/watch?v=nVstM5i7WA8&t=289s" class="btn btn-primary">Selengkapnya</a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- project end -->
+        
 
 
-    <!-- Footer -->
-    <footer>
-      <div class=" text-bg-primary text-center mt-5 pt-3 pb-3">
-        <p>Dibuat dengan sepenuh hati 💖</p>
-      </div>
-      
-    </footer>
 
-    <!-- Footer End -->
-
-    </script>
-  </body>
+    <script>
+        AOS.init();
+      </script>
+    
+</body>
 </html>
