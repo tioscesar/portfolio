@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['index.html'],
+  darkmode:'class',
   theme: {
     container: {
       center: true,
@@ -16,11 +17,16 @@ module.exports = {
       }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui","tailgrids/plugin")],
 
   daisyui: {
     themes: ["light", 
-              "dark", "cupcake"],
+              "dark", 
+              "cupcake",
+              "black",
+              "business",
+              "night",
+            ],
   },
 }
 
